@@ -9,17 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/14a37b8fd3.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v5-font-face.min.css" />
     <title>Tic-Tac-Toe</title>
 </head>
 
 <body>
 
     <!--Dark mode button-->
-    <div class="container">     
-            <div class="toggle-btn" id="icon"  onclick="this.classList.toggle('active')"> <!--note this-->
-                <div class="inner-circle"></div>
-            </div>  
+    <div class="container">
+        <div class="toggle-btn" id="icon" onclick="this.classList.toggle('active')"> <!--note this-->
+            <div class="inner-circle"></div>
+        </div>
     </div>
 
     <!--select-box section-->
@@ -69,16 +68,16 @@
             <button>Replay</button>
         </div>
     </div>
-<div class="footer">
-            <h4 >Designed & Developed with &#10084;&#65039; by Saurabh</h4>
-        </div>
+    <div class="footer">
+        <h4>Designed & Developed with &#10084;&#65039; by Saurabh</h4>
+    </div>
     <script>
         var icon = document.getElementById("icon");
-        icon.onclick = function(){
+        icon.onclick = function () {
             document.body.classList.toggle("dark-theme");
-            if(document.body.classList.contains("dark-theme")){
-            icon.classList.add("active");
-            }else{
+            if (document.body.classList.contains("dark-theme")) {
+                icon.classList.add("active");
+            } else {
                 icon.classList.remove("active");
             }
         }
